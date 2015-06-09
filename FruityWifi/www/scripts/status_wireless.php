@@ -17,7 +17,7 @@
 */ 
 ?>
 <?
-include "../login_check.php";
+//include "../login_check.php"; allow unauth start for autostart function
 include "../config/config.php";
 include "../functions.php";
 
