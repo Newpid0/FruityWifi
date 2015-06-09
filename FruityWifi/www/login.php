@@ -18,7 +18,7 @@
 ?>
 <?
 
-session_start();
+
 session_regenerate_id(true);
 
 include "users.php";
@@ -34,11 +34,15 @@ $pass = $_POST["pass"];
 //echo "<br>";
 
 if ($users[$user] == md5($pass)) {
+    session_start();
+    $_SESSION['login'] = "1";
     $_SESSION["user_id"] = $user;
     //echo "welcome";
     header('Location: page_status.php');
 } else {
+    session_start();
+    $_SESSION['login'] = '';
     //echo "get out of here...";
-    header('Location: index.php?error=1');
+    header('Location: index.php');
 }
 ?>
