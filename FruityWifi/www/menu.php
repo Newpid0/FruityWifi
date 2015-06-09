@@ -36,22 +36,22 @@ header("Pragma: no-cache");
     <tr>
         <td width="160px" nowrap>
             <div class="m-enu">
-                <img src="../../img/logo.png" width=32><img style="padding-left:2px; padding-top:0px;" src="img/logo-fw.png">
+                <img src="../../img/logo.png" width=32><img style="padding-left:2px; padding-top:0px;" src="../../img/logo-fw.png">
             </div>
         </td>
         <td nowrap>
             <div class="menu" style="padding-left:4px; padding-bottom:0px;" >
-                <a href="page_status.php" class="menu">status</a> | 
-                <a href="page_status_wsdl.php" class="menu">wsdl</a> | 
-                <a href="page_config_adv.php">config</a> | 
+                <a href="/page_status.php" class="menu">status</a> | 
+                <a href="/page_status_wsdl.php" class="menu">wsdl</a> | 
+                <a href="/page_config_adv.php">config</a> | 
                 <!--
                 <a href="page_kismet.php">kismet</a> | 
                 <a href="page_squid.php">squid</a> | 
                 <a href="page_sslstrip.php">sslstrip</a> | 
                 -->
-                <a href="page_modules.php">modules</a> | 
-                <a href="page_logs.php">logs</a> | 
-                <a href="logout.php">logout</a> | <?=$version?>
+                <a href="/page_modules.php">modules</a> | 
+                <a href="/page_logs.php">logs</a> | 
+                <a href="/logout.php">logout</a> | <?=$version?>
             </div>
         </td>
     </tr>
