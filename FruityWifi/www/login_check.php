@@ -19,8 +19,10 @@
 <?
 session_start();
 
-if (!isset($_SESSION["user_id"])) {
-    header('Location: /logout.php');
-    //exit; // It will be added on the next release
+if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+header("HTTP/1.1 401 Unauthorized");
+header ("Location: /logout.php");
+die();
+
 }
 ?>
