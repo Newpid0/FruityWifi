@@ -51,7 +51,8 @@ header("Pragma: no-cache");
                 -->
                 <a href="/page_modules.php">modules</a> | 
                 <a href="/page_logs.php">logs</a> | 
-                <a href="/logout.php">logout</a> | <?=$version?>
+                <a href="/logout.php">logout</a> | 
+                <a href="/reboot.php">reboot</a> | <?=$version?>
             </div>
         </td>
     </tr>
